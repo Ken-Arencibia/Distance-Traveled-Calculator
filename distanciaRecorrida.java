@@ -22,8 +22,10 @@ public class distanciaRecorrida{//Velocidad en metros por segundo
         return Math.round((VelInicial*Fuerza)*Math.pow(2,Fuerza));
     }
 
-
-    public static int VelInicial()
+    //la velocidad inicial en metros por segundo
+    public static int VelInicial(int velocidadFinal, int variacionDeLaVelocidad){
+        return velocidadFinal-variacionDeLaVelocidad;
+    }
 
 
 
