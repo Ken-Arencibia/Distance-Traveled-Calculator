@@ -14,10 +14,17 @@ public class distanciaRecorrida{
     }
 //Posicón inicial en metros
     public static int posicionInicial(){
+        return;
 
     }
     public static void main(String[]args){
         Scanner sc=new Scanner(System.in);
+        System.out.println("Introduzca el tiempo: ");
+        int time= sc.nextInt();
+        System.out.println(1/2*aceleracion()*(tiempo(time)*tiempo(time))+(velocidadInicial()*tiempo(time)) + posicionInicial());
+        sc.close();
+    }
+}
         System.out.println("Hola Mundo");
         sc.close();
     }
