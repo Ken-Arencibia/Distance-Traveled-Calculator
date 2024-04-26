@@ -25,7 +25,3 @@ public class distanciaRecorrida{
         sc.close();
     }
 }
-        System.out.println("Hola Mundo");
-        sc.close();
-    }
-}
