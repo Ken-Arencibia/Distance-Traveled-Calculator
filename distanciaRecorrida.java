@@ -1,27 +1,43 @@
 import java.util.Scanner;
-public class distanciaRecorrida{
-//el tiempo está definido en segundos
-    public static int tiempo(int a){
-        return  a;
-    }
-//la aceleracion en metros por segundo cuadrado
-    public static int aceleracion(){
-        return;
-    }
-//Velocidad en metros por segundo
-    public static int velocidadInicial(){
-        return;
-    }
-//Posicón inicial en metros
-    public static int posicionInicial(){
-        return;
-
-    }
+public class distanciaRecorrida{//Velocidad en metros por segundo
     public static void main(String[]args){
         Scanner sc=new Scanner(System.in);
-        System.out.println("Introduzca el tiempo: ");
-        int time= sc.nextInt();
-        System.out.println(1/2*aceleracion()*(tiempo(time)*tiempo(time))+(velocidadInicial()*tiempo(time)) + posicionInicial());
+
+
+
         sc.close();
     }
+    public static int Tiempo(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce los valores para la ecuación t = (a + b) * c / d:");
+
+        System.out.print("Introduce el valor de a: ");
+        double a = sc.nextDouble();
+
+        System.out.print("Introduce el valor de b: ");
+        double b = sc.nextDouble();
+
+        System.out.print("Introduce el valor de c: ");
+        double c = sc.nextDouble();
+
+        System.out.print("Introduce el valor de d: ");
+        double d = sc.nextDouble();
+
+        double resultado = ((a + b) * c) / d;
+
+        int tiempoS = (int) resultado;
+        return tiempoS;
+    }
+
+    //la aceleracion en metros por segundo cuadrado
+    public static int Aceleracion( double vel,double fuerza,double dist){}
+
+
+    public static int VelInicial()
+
+
+
+    //Posicón inicial en metros
+    public static int PosInicial()
+
 }
